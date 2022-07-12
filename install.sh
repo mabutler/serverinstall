@@ -2,6 +2,9 @@
 
 source ./variables.list
 
+# install authorized keys
+cat ssh.authorized_keys >> ~/.ssh/authorized_keys
+
 # full update before anything else
 pacman -Syu --noconfirm
 
@@ -26,5 +29,5 @@ do
 	systemctl enable $service --now
 done
 
-certbot --test-cert -n --nginx --agree-tos --email $EMAIL --expand --domains $DOMAINS
+certbot -n --nginx --agree-tos --email $EMAIL --expand --domains $DOMAINS
 
