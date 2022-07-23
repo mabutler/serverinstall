@@ -3,3 +3,4 @@ tmux
 pacman-contrib
 nginx-mainline
 certbot-nginx
+fail2ban

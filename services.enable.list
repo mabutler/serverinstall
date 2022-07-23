@@ -1,2 +1,3 @@
 nginx
 certbot-renew.timer
+fail2ban.service
